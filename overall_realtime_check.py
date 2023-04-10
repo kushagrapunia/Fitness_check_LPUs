@@ -95,4 +95,4 @@ if __name__=="__main__":
     # json_data = json.load(open(dummy_json, mode="r", encoding="utf-8"))
     # fitness_check = Fitness_Check()
     # cameras_ping_details = fitness_check.ping_cameras(json_data)
-    print(f"CPU temperature: {get_cpu_temprature()}\n CPU usage: {get_cpu_usage()}\n RAM stats: {get_ram_details()}\n, GPU stats: {get_gpu_details()}")
+    print(f"CPU temperature: {get_cpu_temprature()}\nCPU usage: {get_cpu_usage()}\n RAM stats: {get_ram_details()}\n, GPU stats: {get_gpu_details()}")
