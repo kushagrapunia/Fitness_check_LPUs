@@ -7,15 +7,14 @@ def get_ram_details():
 	del output[0]
 	ram_details = {}
 	total_memory, used_memory, free_memory, shared_memory, buff_cache, available_memory = output
-	ram_details = {
+	return {
 		"Total_Memory": total_memory,
 		"Used_memory": used_memory,
 		"Free_Memory": free_memory,
 		"Shared_Memory": shared_memory,
 		"Buff_Cache": buff_cache,
-		"Available_Memory": available_memory
+		"Available_Memory": available_memory,
 	}
-	return ram_details
 
 
 
