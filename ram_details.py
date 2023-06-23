@@ -5,7 +5,6 @@ def get_ram_details():
 	result = subprocess.run(cmd, stdout=subprocess.PIPE)
 	output = result.stdout.decode('utf-8').strip().split('\n')[1].split()
 	del output[0]
-	ram_details = {}
 	total_memory, used_memory, free_memory, shared_memory, buff_cache, available_memory = output
 	return {
 		"Total_Memory": total_memory,

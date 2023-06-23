@@ -1,9 +1,12 @@
 import subprocess
+import json
 
 #CPU reading might not be accurate
 def get_CPU_temperature():   
-    temp_output = subprocess.check_output(['sensors']).decode('utf-8')
-    return temp_output.strip().split('\n')[2].split()[1]
+    command = "sensors -j"
+    output = subprocess.check_output(command, shell=True)
+    temp_output = json.loads(output)
+    return temp_output["coretemp-isa-0000"]["Package id 0"]["temp1_input"]
 
 
 
