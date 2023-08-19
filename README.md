@@ -1,2 +1,3 @@
 # Fitness_check_LPUs
-This python script can be run on cronjob in linux systems to fetch CPU, RAM, and NVIDIA GPU information from time to time without using any other monitoring library
+This python script can be run on a cronjob on Linux systems to fetch CPU, RAM, and NVIDIA GPU information without using any other monitoring library.
+This script can be run on cronjobs in a Linux system, which will help in fetching real-time system conditions from time to time.
